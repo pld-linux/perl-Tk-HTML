@@ -5,7 +5,7 @@ Summary:	Tk::HTML Perl module
 Summary(pl):	Modu³ Perla Tk::HTML
 Name:		perl-Tk-HTML
 Version:	3.002
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -14,7 +14,7 @@ BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-Tk
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,7 +28,8 @@ Modu³ Perla Tk::HTML.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -44,9 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/tkweb
-%{perl_sitelib}/Tk/*.pm
-%{perl_sitelib}/Tk/HTML
-%dir %{perl_sitelib}/auto/Tk
-%{perl_sitelib}/auto/Tk/HTML
-%{perl_sitelib}/auto/Tk/Web
+%{perl_vendorlib}/Tk/*.pm
+%{perl_vendorlib}/Tk/HTML
+%dir %{perl_vendorlib}/auto/Tk
+%{perl_vendorlib}/auto/Tk/HTML
+%{perl_vendorlib}/auto/Tk/Web
 %{_mandir}/man[13]/*

@@ -5,7 +5,7 @@ Summary:	Tk::HTML Perl module
 Summary(pl):	Modu³ Perla Tk::HTML
 Name:		perl-Tk-HTML
 Version:	3.002
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz

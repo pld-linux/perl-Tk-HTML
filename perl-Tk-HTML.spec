@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Tk
-%define		pnam	HTML
+%define	pdir	Tk
+%define	pnam	HTML
 Summary:	Tk::HTML Perl module
 Summary(pl):	Modu³ Perla Tk::HTML
 Name:		perl-Tk-HTML

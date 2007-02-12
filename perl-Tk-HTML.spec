@@ -6,7 +6,7 @@
 %define		pdir	Tk
 %define		pnam	HTML
 Summary:	Tk::HTML Perl module
-Summary(pl):	Modu≥ Perla Tk::HTML
+Summary(pl.UTF-8):   Modu≈Ç Perla Tk::HTML
 Name:		perl-Tk-HTML
 Version:	3.003
 Release:	1
@@ -26,8 +26,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Tk::HTML Perl module.
 
-%description -l pl
-Modu≥ Perla Tk::HTML.
+%description -l pl.UTF-8
+Modu≈Ç Perla Tk::HTML.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

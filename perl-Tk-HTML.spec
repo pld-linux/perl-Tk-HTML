@@ -6,7 +6,7 @@
 %define		pdir	Tk
 %define		pnam	HTML
 Summary:	Tk::HTML Perl module
-Summary(pl.UTF-8):   Moduł Perla Tk::HTML
+Summary(pl.UTF-8):	Moduł Perla Tk::HTML
 Name:		perl-Tk-HTML
 Version:	3.003
 Release:	1

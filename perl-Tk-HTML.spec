@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Tk
 %define		pnam	HTML
+%include	/usr/lib/rpm/macros.perl
 Summary:	Tk::HTML Perl module
 Summary(pl.UTF-8):	Moduł Perla Tk::HTML
 Name:		perl-Tk-HTML
@@ -14,10 +14,11 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8ef339ccb5fba4f5aef61e59e3e81b19
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Tk-HTML/
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-Tk
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch

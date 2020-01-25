@@ -4,7 +4,6 @@
 
 %define		pdir	Tk
 %define		pnam	HTML
-%include	/usr/lib/rpm/macros.perl
 Summary:	Tk::HTML Perl module
 Summary(pl.UTF-8):	Moduł Perla Tk::HTML
 Name:		perl-Tk-HTML
